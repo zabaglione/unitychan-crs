@@ -30,13 +30,10 @@ CGPROGRAM
 #pragma fragment frag
 #include "UnityCG.cginc"
 #include "AutoLight.cginc"
-#define ENABLE_CAST_SHADOWS
-#define ENABLE_RIMLIGHT
-#include "CharaSkin.cg"
+#include "CharaSkin.cginc"
 ENDCG
 		}
 	}
 
-	FallBack "Diffuse"
+	FallBack "Transparent/Cutout/Diffuse"
 }
-
